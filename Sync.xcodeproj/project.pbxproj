@@ -11,6 +11,11 @@
 		41CD226B2BA74C480026827D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD226A2BA74C480026827D /* ContentView.swift */; };
 		41CD226D2BA74C490026827D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CD226C2BA74C490026827D /* Assets.xcassets */; };
 		41CD22702BA74C490026827D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CD226F2BA74C490026827D /* Preview Assets.xcassets */; };
+		41CD22772BA74C700026827D /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD22762BA74C700026827D /* SpotifyiOS.framework */; };
+		41CD22802BA74FFE0026827D /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD227F2BA74FFE0026827D /* SpotifyController.swift */; };
+		41CD22832BA75CEA0026827D /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD22822BA75CEA0026827D /* Playback.swift */; };
+		41CD22852BA75D140026827D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD22842BA75D140026827D /* User.swift */; };
+		41F416CC2BA7CF40004C91DA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F416CB2BA7CF40004C91DA /* NotificationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		41CD226A2BA74C480026827D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41CD226C2BA74C490026827D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41CD226F2BA74C490026827D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41CD22762BA74C700026827D /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		41CD22782BA74D500026827D /* Sync-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sync-Bridging-Header.h"; sourceTree = "<group>"; };
+		41CD227B2BA74EF00026827D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41CD227F2BA74FFE0026827D /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
+		41CD22822BA75CEA0026827D /* Playback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
+		41CD22842BA75D140026827D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		41F416CB2BA7CF40004C91DA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CD22772BA74C700026827D /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +64,13 @@
 		41CD22672BA74C480026827D /* Sync */ = {
 			isa = PBXGroup;
 			children = (
+				41CD227E2BA74FE90026827D /* Models */,
+				41CD227D2BA74FE40026827D /* Views */,
+				41CD227C2BA74FDF0026827D /* Controllers */,
+				41CD227B2BA74EF00026827D /* Info.plist */,
 				41CD22682BA74C480026827D /* SyncApp.swift */,
-				41CD226A2BA74C480026827D /* ContentView.swift */,
+				41CD22762BA74C700026827D /* SpotifyiOS.framework */,
+				41CD22782BA74D500026827D /* Sync-Bridging-Header.h */,
 				41CD226C2BA74C490026827D /* Assets.xcassets */,
 				41CD226E2BA74C490026827D /* Preview Content */,
 			);
@@ -65,6 +83,40 @@
 				41CD226F2BA74C490026827D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41CD227C2BA74FDF0026827D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41CD22812BA75CD60026827D /* SpotifyController */,
+				41F416CB2BA7CF40004C91DA /* NotificationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41CD227D2BA74FE40026827D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41CD226A2BA74C480026827D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41CD227E2BA74FE90026827D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41CD22812BA75CD60026827D /* SpotifyController */ = {
+			isa = PBXGroup;
+			children = (
+				41CD227F2BA74FFE0026827D /* SpotifyController.swift */,
+				41CD22822BA75CEA0026827D /* Playback.swift */,
+				41CD22842BA75D140026827D /* User.swift */,
+			);
+			path = SpotifyController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +151,7 @@
 				TargetAttributes = {
 					41CD22642BA74C480026827D = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -137,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F416CC2BA7CF40004C91DA /* NotificationController.swift in Sources */,
+				41CD22832BA75CEA0026827D /* Playback.swift in Sources */,
 				41CD226B2BA74C480026827D /* ContentView.swift in Sources */,
+				41CD22802BA74FFE0026827D /* SpotifyController.swift in Sources */,
+				41CD22852BA75D140026827D /* User.swift in Sources */,
 				41CD22692BA74C480026827D /* SyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,27 +321,42 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sync/Preview Content\"";
 				DEVELOPMENT_TEAM = MT5QJPXQS7;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sync",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthKothuri.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sync/Sync-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,27 +365,41 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sync/Preview Content\"";
 				DEVELOPMENT_TEAM = MT5QJPXQS7;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sync",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnanthKothuri.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sync/Sync-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
